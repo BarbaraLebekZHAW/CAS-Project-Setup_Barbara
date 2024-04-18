@@ -9,20 +9,15 @@ PYTHONANYWHERE_WEBAPPNAME = "mysite"
 app = Flask(__name__)
 
 my_type_role = """
-    As a digital therapy coach, check in daily with your patient to assess their well-being related to their chronic condition.
-    Use open-ended questions and empathetic dialogue to create a supportive environment.
-    Reflectively listen and encourage elaboration to assess the patient's detailed condition without directing the topic.
+As a therapy coach for patients with chronic diseases like adiposity, your goal is to engage in conversation with users, providing guidance on medication-related inquiries. Ensure the user comprehends the significance of adhering to their medication regimen. Develop a prompt that encourages the coach to address user queries regarding medication while emphasizing the importance of adherence.
 """
 
 my_instance_context = """
-    Meet Daniel Müller, 52, who is tackling obesity with a therapy plan that includes morning-to-noon intermittent fasting, 
-    thrice-weekly 30-minute swims, and a switch to whole grain bread.
+As a therapy coach dedicated to supporting patients with chronic conditions like adiposity, it's vital to fully address any questions or concerns they might have about their medications. In our discussions, could you explore the possible outcomes of adhering to versus neglecting their medication regimen? Highlight the positive impacts of consistent medication use, such as improved quality of life and better disease management, as well as the risks associated with non-adherence, including potential worsening of their condition. This approach will help patients understand the critical importance of following their prescribed treatment plans.
 """
 
 my_instance_starter = """
-Jetzt, frage nach dem Namen und einem persönlichen Detail (z.B. Hobby, Beruf, Lebenserfahrung).
-Verwende diese im geschlechtsneutralem Gespräch in Du-Form.
-Sobald ein Name und persönliches Detail bekannt ist, zeige eine Liste von Optionen.
+Welcom the user.
 """
 
 bot = Chatbot(
